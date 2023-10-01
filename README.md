@@ -326,3 +326,23 @@ Esto significa que las redes con la dirección 2001:1200:A2:1::/64 no podrán ac
 Esta configuración permite una diferenciación clara en el acceso a los servidores, asegurando que los dispositivos PC1 y PC3 en la red de Bogotá puedan utilizar el puerto 80, mientras que otros dispositivos accedan a través del puerto 443. Las Access Lists IPv6 son una herramienta esencial para administrar y controlar el flujo de tráfico en una red IPv6, lo que garantiza una mayor seguridad y eficiencia en la distribución de recursos y servicios.
 
 
+hemos detallado la configuración y verificación de un proyecto de redes denominado "Lab2AdminRedes". A lo largo del proyecto, hemos trabajado en la creación de una red IPv6, configuración de VLANs, asignación de direcciones IPv6 mediante DHCPv6 y asignación manual, enrutamiento EIGRP y EIGRPv6, implementación de túneles ISATAP para la coexistencia de IPv4 e IPv6, y control de acceso mediante listas de control de acceso IPv6 (Access Lists IPv6).
+
+
+Para la asignación de direcciones IPv6, utilizamos el rango 2001:1200:A2::/64 y dividimos este rango en cinco subredes para su asignación a VLANs específicas.
+
+
+Implementamos DHCPv6 en la red de Bogotá para asignar direcciones IPv6 de manera automática, mientras que en la red de España configuramos las direcciones IPv6 directamente en el router.
+
+
+Configuramos enrutamiento EIGRP y EIGRPv6 para garantizar la conectividad en ambas redes y permitir la comunicación entre los dispositivos.
+
+
+Establecimos túneles ISATAP para permitir que los paquetes IPv6 atraviesen una red IPv4, facilitando así la comunicación IPv6 en nuestra red.
+
+
+Utilizamos Access Lists IPv6 para controlar el acceso a los servidores a través de diferentes puertos, permitiendo que algunos dispositivos accedan al puerto 80 y otros al puerto 443.
+
+
+En conjunto, estas configuraciones y verificaciones aseguran una gestión eficiente y segura de la red, permitiendo que los dispositivos accedan a los recursos de manera adecuada y garantizando la coexistencia armoniosa de IPv4 e IPv6 en el entorno de red.
+
